@@ -11,7 +11,7 @@ using namespace std;
 
 
 /*******************************************************************************
-* hw07ec - Dynamic Memory
+* hw07 - Pointers and Dynamic Arrays
 *-------------------------------------------------------------------------------
 * This program is practice on dynamic memory allocation and deallocation for hw7
 *-------------------------------------------------------------------------------*/
@@ -22,7 +22,7 @@ int main()
     cout << "   Programmed by: Belal Zahran\n";
     cout << "   Student ID   : 1176978\n";
     cout << "   CS1B         : MTWT: 3:00 - 5:20pm\n";
-    cout << "   HW #7ec      : Dynamic Memory \n";
+    cout << "   HW #7        : Pointers and Dynamic Arrays\n";
     cout << "*****************************************\n\n";
 
 
@@ -31,16 +31,34 @@ int main()
 
 
     // add items
-    myFirstInventory.addItem("Shoes", 33, 20.99);
-    myFirstInventory.addItem("Sunglasses", 23, 19.99);
-    myFirstInventory.addItem("Hats", 124, 10.99);
-    myFirstInventory.addItem("Umbrellas", 14, 19.99);
-    myFirstInventory.addItem("Jackets", 23, 59.99);
+    string newItem;
+    ManageInventory firstInventory;
+
+
+    cout << "Add new Item: ";
+    getline(cin, newItem);
+    firstInventory.addItem(newItem, 22, 145.99);
+
+    cout << "\nAdd new Item: ";
+    getline(cin, newItem);
+    firstInventory.addItem(newItem, 33, 22.99);
+
+    cout << "\nAdd new Item: ";
+    getline(cin, newItem);
+    firstInventory.addItem(newItem, 11, 111.44);
+
+    cout << "\nAdd new Item: ";
+    getline(cin, newItem);
+    firstInventory.addItem(newItem, 20, 165.88);
+
+    cout << "\nAdd new Item: ";
+    getline(cin, newItem);
+    firstInventory.addItem(newItem, 77, 45.77);
 
 
 
     // print inventory
-    myFirstInventory.PrintInventory();
+    firstInventory.PrintInventory();
 
 
 

@@ -9,7 +9,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f032ca7-59ca-4e42-bd3a-497ca15de4c3" name="Default Changelist" comment="" />
+    <list default="true" id="6f032ca7-59ca-4e42-bd3a-497ca15de4c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ManageInventory.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw07ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw07ec.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw07ec.dSYM/Contents/Resources/DWARF/hw07ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw07ec.scr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw07ec.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,14 +55,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="hw07" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hw07" TARGET_NAME="hw07" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hw07" RUN_TARGET_NAME="hw07">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -67,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624890700552</updated>
       <workItem from="1624890701919" duration="6756000" />
+      <workItem from="1624897653144" duration="704000" />
     </task>
     <servers />
   </component>

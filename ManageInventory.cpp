@@ -54,6 +54,7 @@ void ManageInventory::PrintInventory() const
 {
     cout << left;
 
+    cout << "INVENTORY:\n";
     cout << "Item        # left   Price\n";
     cout <<"----------- ------- -------\n";
     // loop through list

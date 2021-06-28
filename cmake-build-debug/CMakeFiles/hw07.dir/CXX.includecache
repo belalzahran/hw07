@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bz/Desktop/HW/hw07/ManageInventory.cpp
+ManageInventory.h
+/Users/bz/Desktop/HW/hw07/ManageInventory.h
+
+/Users/bz/Desktop/HW/hw07/ManageInventory.h
+iostream
+-
+iomanip
+-
+
+/Users/bz/Desktop/HW/hw07/hw07.cpp
+iostream
+-
+ManageInventory.h
+/Users/bz/Desktop/HW/hw07/ManageInventory.h
+
