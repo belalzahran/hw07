@@ -29,6 +29,21 @@ ManageInventory::~ManageInventory()
 }
 
 
+// copy constructor
+ManageInventory::ManageInventory(const ManageInventory& invent)
+{
+    count = invent.count;
+    size = invent.size;
+
+    Item ** p__pInventoryItems = new Item*;
+
+    for (int i = 0; i < size; i++)
+    {
+        p__pInventoryItems[i]->name     = invent.p__pInventoryItems[i]->name;
+        p__pInventoryItems[i]->quantity = invent.p__pInventoryItems[i]->quantity;
+        p__pInventoryItems[i]->cost     = invent.p__pInventoryItems[i]->cost;
+    }
+}
 
 
 // method to add items to the array of items
@@ -45,7 +60,6 @@ void ManageInventory::addItem(string name, int quantity, float cost)
 
     // insert and increment count
     p__pInventoryItems[count] = x;
-
     count++;
 }
 
@@ -171,7 +185,10 @@ void ManageInventory::PrintReceipt(vector<int> index, vector<int> numBought) con
     float tax;
     float afterTax;
 
-    cout << endl << endl << setprecision(2) << fixed;
+    cout << endl << "RECEIPT: ";
+    cout << endl << setprecision(2) << fixed;
+
+
 
     for (int i = 0; i < index.size(); i++)
     {

@@ -66,6 +66,13 @@ int main()
     firstInventory.PrintInventory();
 
 
+    ManageInventory secondInventory = firstInventory;
+
+
+    cout << "PRINT THE COPIED OBJECT:/n";
+
+    secondInventory.PrintInventory();
+
 
     return 0;
 }

@@ -34,9 +34,9 @@ public:
     void Shop();
     int GetIndex(string name) const;
     void PrintReceipt(vector<int> index, vector<int> num) const;
-};
 
-string Round(float x);
+    ManageInventory(const ManageInventory& invent);
+};
 
 
 
