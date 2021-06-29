@@ -1,6 +1,8 @@
 
 #include <iostream>
 #include <iomanip>
+#include <ostream>
+#include <vector>
 using namespace std;
 
 #ifndef HW7EC_MANAGEINVENTORY_H
@@ -28,7 +30,13 @@ public:
 
     void addItem(string name, int quantity, float cost);
     void PrintInventory() const;
+    void ItemPurchase(string name, int quantity);
+    void Shop();
+    int GetIndex(string name) const;
+    void PrintReceipt(vector<int> index, vector<int> num) const;
 };
+
+string Round(float x);
 
 
 

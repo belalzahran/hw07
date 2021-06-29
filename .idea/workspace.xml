@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="hw07" targetName="hw07" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -10,13 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f032ca7-59ca-4e42-bd3a-497ca15de4c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ManageInventory.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw07ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw07ec.dSYM/Contents/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw07ec.dSYM/Contents/Resources/DWARF/hw07ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw07ec.scr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw07ec.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageInventory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ManageInventory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageInventory.h" beforeDir="false" afterPath="$PROJECT_DIR$/ManageInventory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/ManageInventory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/ManageInventory.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/hw07.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/hw07.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/hw07" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hw07" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw07.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hw07.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -39,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -81,6 +87,7 @@
       <updated>1624890700552</updated>
       <workItem from="1624890701919" duration="6756000" />
       <workItem from="1624897653144" duration="704000" />
+      <workItem from="1624900130094" duration="13148000" />
     </task>
     <servers />
   </component>
@@ -89,5 +96,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ManageInventory.h</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

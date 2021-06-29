@@ -15,10 +15,8 @@ iostream
 -
 iomanip
 -
-
-/Users/bz/Desktop/HW/hw07/hw07.cpp
-iostream
+ostream
 -
-ManageInventory.h
-/Users/bz/Desktop/HW/hw07/ManageInventory.h
+vector
+-
 

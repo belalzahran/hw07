@@ -10,6 +10,7 @@
 using namespace std;
 
 
+
 /*******************************************************************************
 * hw07 - Pointers and Dynamic Arrays
 *-------------------------------------------------------------------------------
@@ -41,7 +42,7 @@ int main()
 
     cout << "\nAdd new Item: ";
     getline(cin, newItem);
-    firstInventory.addItem(newItem, 33, 22.99);
+    firstInventory.addItem(newItem, 33, 29.99);
 
     cout << "\nAdd new Item: ";
     getline(cin, newItem);
@@ -56,6 +57,10 @@ int main()
     firstInventory.addItem(newItem, 77, 45.77);
 
 
+    firstInventory.PrintInventory();
+
+    firstInventory.Shop();
+
 
     // print inventory
     firstInventory.PrintInventory();
@@ -64,3 +69,7 @@ int main()
 
     return 0;
 }
+
+
+
+
