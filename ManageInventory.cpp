@@ -35,9 +35,9 @@ ManageInventory::ManageInventory(const ManageInventory& invent)
     count = invent.count;
     size = invent.size;
 
-    Item ** p__pInventoryItems = new Item*;
+    Item ** p__pInventoryItems = new Item*[size];
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < count; i++)
     {
         p__pInventoryItems[i]->name     = invent.p__pInventoryItems[i]->name;
         p__pInventoryItems[i]->quantity = invent.p__pInventoryItems[i]->quantity;
@@ -46,21 +46,16 @@ ManageInventory::ManageInventory(const ManageInventory& invent)
 }
 
 
+
+
+
 // method to add items to the array of items
 void ManageInventory::addItem(string name, int quantity, float cost)
 {
-
     // create new pointer
-    Item *x = new Item;
-
-    // add values
-    x->name = name;
-    x->quantity = quantity;
-    x->cost = cost;
-
+    Item *x = new Item{name, quantity, cost};
     // insert and increment count
-    p__pInventoryItems[count] = x;
-    count++;
+    p__pInventoryItems[count++] = x;
 }
 
 
