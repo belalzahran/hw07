@@ -28,13 +28,12 @@ int main()
 
 
     // intitialize inventory
-    ManageInventory myFirstInventory{5};
+    ManageInventory firstInventory{5};
     ManageInventory secondInventory;
 
 
     // add items
     string newItem;
-    ManageInventory firstInventory;
 
 
     cout << "Add new Item: ";
@@ -61,6 +60,8 @@ int main()
     secondInventory = firstInventory;
 
     firstInventory.PrintInventory();
+
+
 
 // prompt the user to buy things from the inventory
     firstInventory.Shop();

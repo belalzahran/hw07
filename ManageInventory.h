@@ -9,7 +9,7 @@ using namespace std;
 #define HW7EC_MANAGEINVENTORY_H
 
 
-// struct for the Items and its aspecgs
+// struct for the Items and its aspects
 struct Item{
     string name;
     int quantity;
@@ -23,7 +23,7 @@ const int MAX_SIZE = 50;
 class ManageInventory{
 
 private:
-    int size{MAX_SIZE};
+    int size{50};
     int count;
     Item ** p__pInventoryItems;
 
@@ -152,7 +152,7 @@ public:
  * POST-CONDITIONS
  * printed receipt to console
  ********************************************************************/
-    void PrintReceipt(vector<int> index, vector<int> num) const;
+    void PrintReceipt(vector<int>* index, vector<int>* numBought) const;
 
 /********************************************************************
  * Method PrintInventory: class ManageInventory

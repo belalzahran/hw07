@@ -17,10 +17,10 @@ ManageInventory::ManageInventory(int size)
 ManageInventory::~ManageInventory()
 {
     // looping through array to delete items
-    for (int i = 0; i < count; i++)
-    {
-        delete p__pInventoryItems[i];
-    }
+//    for (int i = 0; i < count; i++)
+//    {
+//        delete p__pInventoryItems[i];
+//    }
     // deleting array
     delete [] p__pInventoryItems;
 }
@@ -33,14 +33,12 @@ ManageInventory::ManageInventory(const ManageInventory& invent)
     size = invent.size;
 
     // creating new array of pointers to items
-    Item ** p__pInventoryItems = new Item*[size];
+    p__pInventoryItems = new Item*[size];
 
     for (int i = 0; i < count; i++)
     {
         // adding in the contents of each item during iterations
-        p__pInventoryItems[i]->name     = invent.p__pInventoryItems[i]->name;
-        p__pInventoryItems[i]->quantity = invent.p__pInventoryItems[i]->quantity;
-        p__pInventoryItems[i]->cost     = invent.p__pInventoryItems[i]->cost;
+        p__pInventoryItems[i] = invent.p__pInventoryItems[i];
     }
 
 
@@ -64,7 +62,7 @@ void ManageInventory::addItem(string name, int quantity, float cost)
 {
     int i = 0;
     bool found = false;
-    //loop through the array untill the item is found or the count is reached
+    //loop through the array until the item is found or the count is reached
     while(i < count && !found)
     {
         if(p__pInventoryItems[i]->name == name)
@@ -123,10 +121,10 @@ int ManageInventory::GetIndex(string name) const
 }
 void ManageInventory::Shop()
 {
-    string product; // IN & CALC & OUT - the name of the product being bought
-    int numberOfProduct; // IN & CALC & OUT - the number of the product being bought
-    vector<int> index; // CALC - vector of indexes
-    vector<int> numBought; // CALC - vector of quantities
+    string product;        // IN & CALC & OUT - the name of the product being bought
+    int numberOfProduct;   // IN & CALC & OUT - the number of the product being bought
+    vector<int> *index = new vector<int>();     // CALC - vector of indexes
+    vector<int> *numBought = new vector<int>(); // CALC - vector of quantities
 
     // prompt for name of product
     cout << "What would you like to buy(Enter 0 to exit): ";
@@ -135,7 +133,6 @@ void ManageInventory::Shop()
     // user is not exiting SHOP run loop
     while (product != "0")
     {
-
         // prompt for quantity
         cout << "How many " << product << " would you like to buy: ";
         cin >> numberOfProduct;
@@ -145,8 +142,9 @@ void ManageInventory::Shop()
         if(GetIndex(product) != -1)
         {
             ItemPurchase(product, numberOfProduct);
-            index.push_back(GetIndex(product));
-            numBought.push_back(numberOfProduct);
+
+            index->push_back(GetIndex(product));
+            numBought->push_back(numberOfProduct);
         }
         else
         {
@@ -161,8 +159,11 @@ void ManageInventory::Shop()
 
     // print the receipt to the console
     PrintReceipt(index, numBought);
+    delete index;
+    delete numBought;
 
 }
+
 
 
 // method to print out inventory
@@ -186,7 +187,7 @@ void ManageInventory::PrintInventory() const
 }
 
 
-void ManageInventory::PrintReceipt(vector<int> index, vector<int> numBought) const
+void ManageInventory::PrintReceipt(vector<int>* index, vector<int>* numBought) const
 {
     float totalItemCost;
     float totalCost = 0;
@@ -197,14 +198,14 @@ void ManageInventory::PrintReceipt(vector<int> index, vector<int> numBought) con
     cout << endl << setprecision(2) << fixed;
 
     // loop through the vector
-    for (int i = 0; i < index.size(); i++)
+    for (int i = 0; i < index->size(); i++)
     {
         // calculate the cost by multiplying the quantity and the cost of one item
-        totalItemCost = p__pInventoryItems[index.at(i)]->cost * numBought.at(i);
+        totalItemCost = p__pInventoryItems[index->at(i)]->cost * numBought->at(i);
 
         // print the receipt line for the item
-        cout << left << numBought.at(i) << " " << setw(26) << setfill('.') << p__pInventoryItems[index.at(i)]->name << "$" << totalItemCost << endl;
-        cout << numBought.at(i) << " x $" << p__pInventoryItems[index.at(i)]->cost << endl;
+        cout << left << numBought->at(i) << " " << setw(26) << setfill('.') << p__pInventoryItems[index->at(i)]->name << "$" << totalItemCost << endl;
+        cout << numBought->at(i) << " x $" << p__pInventoryItems[index->at(i)]->cost << endl;
 
         // add the cost to the total cost
         totalCost += totalItemCost;
