@@ -12,11 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f032ca7-59ca-4e42-bd3a-497ca15de4c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hw07.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManageInventory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ManageInventory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageInventory.h" beforeDir="false" afterPath="$PROJECT_DIR$/ManageInventory.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/ManageInventory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/ManageInventory.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/hw07.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hw07.dir/hw07.cpp.o" afterDir="false" />
@@ -63,11 +61,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="hw07" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hw07" TARGET_NAME="hw07" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hw07" RUN_TARGET_NAME="hw07">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -90,7 +83,8 @@
       <workItem from="1624890701919" duration="6756000" />
       <workItem from="1624897653144" duration="704000" />
       <workItem from="1624900130094" duration="18023000" />
-      <workItem from="1625173038364" duration="2250000" />
+      <workItem from="1625173038364" duration="5224000" />
+      <workItem from="1625444325162" duration="2094000" />
     </task>
     <servers />
   </component>

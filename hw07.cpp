@@ -29,6 +29,7 @@ int main()
 
     // intitialize inventory
     ManageInventory myFirstInventory{5};
+    ManageInventory secondInventory;
 
 
     // add items
@@ -56,23 +57,22 @@ int main()
     getline(cin, newItem);
     firstInventory.addItem(newItem, 77, 45.77);
 
+    cout << "\n\nCopying Original inventory into second inventory object...\n\n";
+    secondInventory = firstInventory;
 
     firstInventory.PrintInventory();
 
+// prompt the user to buy things from the inventory
     firstInventory.Shop();
-
 
     // print inventory
     firstInventory.PrintInventory();
 
-
-    ManageInventory secondInventory;
-    secondInventory = firstInventory;
-
-
-    cout << "PRINT THE COPIED OBJECT:/n";
-
+    cout << "PRINT THE COPIED Original Inventory:\n";
     secondInventory.PrintInventory();
+
+
+
 
 
     return 0;
